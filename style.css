@@ -1,4 +1,9 @@
-
+#bonne_reponse {
+  background-color: #90ee90;
+}
+#mauvaise_reponse{
+  background-color: #d3d3d3;
+}
 textarea, select {
   width: 100%;
   padding: 12px 20px;

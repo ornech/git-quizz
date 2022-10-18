@@ -75,22 +75,22 @@ if (isset($_POST["qcm_id"]))
 </p>
 <p>
   <label for="reponse1">Réponse 1</label><BR>
-  <textarea rows="1" cols="60" id="reponse1" name="qcm_r1_proposition"><?php echo($json_data['quizz'][$id]['qcm_r1_proposition'] );?></textarea><BR>
+  <textarea rows="1" cols="60" id="<?php if ($checked == "r1"){echo 'bonne_reponse';}else{echo "mauvaise_reponse";}?>" name="qcm_r1_proposition"><?php echo($json_data['quizz'][$id]['qcm_r1_proposition'] );?></textarea><BR>
   <input type="checkbox" name="qcm_reponse" value="r1" <?php if ($checked == "r1"){echo 'checked ';}else{ echo 'disable';}?>> Bonne réponse<BR>
   </p>
   <p>
   <label for="reponse2">Réponse 2</label><BR>
-  <textarea rows="1" cols="60" id="reponse2" name="qcm_r2_proposition"><?php echo($json_data['quizz'][$id]['qcm_r2_proposition'] );?></textarea><BR>
+  <textarea rows="1" cols="60" id="<?php if ($checked == "r2"){echo 'bonne_reponse';}else{echo "mauvaise_reponse";}?>" name="qcm_r2_proposition"><?php echo($json_data['quizz'][$id]['qcm_r2_proposition'] );?></textarea><BR>
   <input type="checkbox" name="qcm_reponse" value="r2" <?php if ($checked == "r2"){echo "checked ";}?>> Bonne réponse<BR>
   </p>
   <p>
   <label for="reponse3">Réponse 3</label><BR>
-  <textarea rows="1" cols="60" id="reponse3" name="qcm_r3_proposition"><?php echo($json_data['quizz'][$id]['qcm_r3_proposition'] );?></textarea><BR>
+  <textarea rows="1" cols="60" id="<?php if ($checked == "r3"){echo 'bonne_reponse';}else{echo "mauvaise_reponse";}?>" name="qcm_r3_proposition"><?php echo($json_data['quizz'][$id]['qcm_r3_proposition'] );?></textarea><BR>
   <input type="checkbox" name="qcm_reponse" value="r3" <?php if ($checked == "r3"){echo 'checked ';}?>> Bonne réponse<BR>
   </p>
   <p>
   <label for="reponse4">Réponse 4</label><BR>
-  <textarea rows="1" cols="60" id="reponse4" name="qcm_r4_proposition"><?php echo($json_data['quizz'][$id]['qcm_r4_proposition'] );?></textarea><BR>
+  <textarea rows="1" cols="60" id="<?php if ($checked == "r4"){echo 'bonne_reponse';}else{echo "mauvaise_reponse";}?>" name="qcm_r4_proposition"><?php echo($json_data['quizz'][$id]['qcm_r4_proposition'] );?></textarea><BR>
   <input type="checkbox" name="qcm_reponse" value="r4" <?php if ($checked == "r4"){echo 'checked ';}?>> Bonne réponse<BR>
   <input type=hidden name="qcm_id" value="<?php echo $id; ?>">
   </p>
