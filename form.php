@@ -70,7 +70,6 @@ if (isset($_POST["qcm_id"]))
 <form action="form.php" method="POST">
 <div id="question">
 <p>
-  <H1>Question </H1>
   <textarea rows="2" cols="60" id="Question" name="qcm_question"><?php echo($json_data['quizz'][$id]['qcm_question'] );?></textarea>
 </p>
 <p>
