@@ -41,13 +41,9 @@ if (isset($_POST["qcm_id"]))
  echo "Données reçues <BR>" ;
 
  $qcm_id = $_POST["qcm_id"];
- //$id = $qcm_id;
  $qcm_question	= $_POST["qcm_question"];
- //echo $qcm_id."<BR>";
- //echo $qcm_question."<BR>";
  $qcm_r1_proposition	= $_POST["qcm_r1_proposition"];
  $qcm_r2_proposition	= $_POST["qcm_r2_proposition"];
- //$qcm_r2_resultat	= $_POST["qcm_r2_resultat"];
  $qcm_r3_proposition	= $_POST["qcm_r3_proposition"];
  $qcm_r4_proposition	= $_POST["qcm_r4_proposition"];
 
@@ -60,9 +56,6 @@ if (isset($_POST["qcm_id"]))
  //file_put_contents('quizz-'.time().'.json', json_encode($json_data));
  file_put_contents('json/quizz4.json', json_encode($json_data));
 }
-
-//$response = file_get_contents("http://localhost/projet1/form.php?q=".$qcm_id."");
-//echo $response ;
 ?>
 
 
