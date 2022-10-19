@@ -1,21 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-table {
-  border-collapse: collapse;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-}
-
-tr {
-  border-bottom: 1px solid #ddd;
-}
-</style>
-</head>
-<body>
+<?php
+require('header.php');
+?>
 
 <?PHP
 // Lis le fichier JSON
