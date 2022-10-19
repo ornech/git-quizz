@@ -18,8 +18,8 @@ $json_data = json_decode($json,true);
 // -------------------------
 
 // récupère le nombre de questions dans le fichier Json
-$nbr_questions = count($json_data["quizz"]);
-
+$nbr_questions = count($json_data["quizz"]) -1 ;
+echo $nbr_questions;
 
 $questionnaire = array();
 
