@@ -2,9 +2,7 @@
 require('header.php');
 require('menu.php');
 
-?>
 
-<?php
 // Lis le fichier JSON
 $json = file_get_contents('json/quizz4.json');
 
@@ -43,7 +41,8 @@ for ($i = 1; $i <= 10; $i++) {
 echo "<form action='resultat.php' method='post'>";
 foreach ($questionnaire as $key => $value) {
   // Question...
-  echo "<p>".$json_data['quizz'][$value]['qcm_question']."";
+  echo "<p>";
+  echo $json_data['quizz'][$value]['qcm_question'];
   echo "<fieldset >";
   echo "<input type=radio name=$value value=r1 required>";
   echo "<label for=r1>".$json_data['quizz'][$value]['qcm_r1_proposition']."</label><br>";
