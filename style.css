@@ -97,3 +97,15 @@ details[open] summary {
   border-bottom: 1px solid #aaa;
   margin-bottom: .5em;
 }
+
+
+canvas {
+  border: 1px dotted ;
+}
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 80vh;
+  width: 80vw;
+}
